@@ -6,8 +6,8 @@ public class StringCalculator {
         String[] strArray = input.split(CalculatorUtils.DELIMITER);
 
         int result = Integer.parseInt(strArray[0]);
-        for(int i = 0; i < strArray.length-2; i += 2) {
-            result = operate(strArray[i+1], result, Integer.parseInt(strArray[i+2]));
+        for (int i = 0; i < strArray.length - 2; i += 2) {
+            result = operate(strArray[i + 1], result, Integer.parseInt(strArray[i + 2]));
         }
         return result;
     }
